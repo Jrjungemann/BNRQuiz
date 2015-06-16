@@ -10,8 +10,9 @@
 		2A00648D1B2FA2E40083BC4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A00648C1B2FA2E40083BC4B /* main.m */; };
 		2A0064901B2FA2E40083BC4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A00648F1B2FA2E40083BC4B /* AppDelegate.m */; };
 		2A0064981B2FA2E40083BC4B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A0064971B2FA2E40083BC4B /* Images.xcassets */; };
-		2A00649B1B2FA2E40083BC4B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0064991B2FA2E40083BC4B /* LaunchScreen.xib */; };
 		2A0064A71B2FA2E40083BC4B /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0064A61B2FA2E40083BC4B /* QuizTests.m */; };
+		2A0064B31B2FA4F30083BC4B /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A0064B11B2FA4F30083BC4B /* QuizViewController.m */; };
+		2A0064B41B2FA4F30083BC4B /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A0064B21B2FA4F30083BC4B /* QuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +32,12 @@
 		2A00648E1B2FA2E40083BC4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2A00648F1B2FA2E40083BC4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2A0064971B2FA2E40083BC4B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2A00649A1B2FA2E40083BC4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2A0064A01B2FA2E40083BC4B /* QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A0064A51B2FA2E40083BC4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A0064A61B2FA2E40083BC4B /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		2A0064B01B2FA4F30083BC4B /* QuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
+		2A0064B11B2FA4F30083BC4B /* QuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
+		2A0064B21B2FA4F30083BC4B /* QuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +81,10 @@
 			children = (
 				2A00648E1B2FA2E40083BC4B /* AppDelegate.h */,
 				2A00648F1B2FA2E40083BC4B /* AppDelegate.m */,
+				2A0064B01B2FA4F30083BC4B /* QuizViewController.h */,
+				2A0064B11B2FA4F30083BC4B /* QuizViewController.m */,
+				2A0064B21B2FA4F30083BC4B /* QuizViewController.xib */,
 				2A0064971B2FA2E40083BC4B /* Images.xcassets */,
-				2A0064991B2FA2E40083BC4B /* LaunchScreen.xib */,
 				2A00648A1B2FA2E40083BC4B /* Supporting Files */,
 			);
 			path = Quiz;
@@ -160,6 +165,7 @@
 				TargetAttributes = {
 					2A0064861B2FA2E40083BC4B = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9MJYPLS5JG;
 					};
 					2A00649F1B2FA2E40083BC4B = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -191,8 +197,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A00649B1B2FA2E40083BC4B /* LaunchScreen.xib in Resources */,
 				2A0064981B2FA2E40083BC4B /* Images.xcassets in Resources */,
+				2A0064B41B2FA4F30083BC4B /* QuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +218,7 @@
 			files = (
 				2A0064901B2FA2E40083BC4B /* AppDelegate.m in Sources */,
 				2A00648D1B2FA2E40083BC4B /* main.m in Sources */,
+				2A0064B31B2FA4F30083BC4B /* QuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,17 +239,6 @@
 			targetProxy = 2A0064A11B2FA2E40083BC4B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2A0064991B2FA2E40083BC4B /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A00649A1B2FA2E40083BC4B /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2A0064A81B2FA2E40083BC4B /* Debug */ = {
@@ -329,9 +325,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -339,9 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -398,6 +402,7 @@
 				2A0064AC1B2FA2E40083BC4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A0064AD1B2FA2E40083BC4B /* Build configuration list for PBXNativeTarget "QuizTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +411,7 @@
 				2A0064AF1B2FA2E40083BC4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
